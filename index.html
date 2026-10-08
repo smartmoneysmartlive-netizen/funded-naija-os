@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FUNDED NAIJA - From ₦80K to ₦320M | Nigeria's #1 Prop Firm</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+<style>*{font-family:Inter,sans-serif}</style>
+</head>
+<body class="bg-[#0B0E11] text-white">
+<nav class="flex justify-between items-center p-4 border-b border-[#2B3139] sticky top-0 bg-[#0B0E11]/95 backdrop-blur z-50">
+<div class="flex items-center gap-2"><div class="w-9 h-9 bg-[#F3BA2F] rounded-xl flex items-center justify-center font-black text-black text-lg">₦</div><span class="font-black">FUNDED<span class="text-[#F3BA2F]">NAIJA</span></span><span class="hidden md:block text-[10px] bg-[#1E2329] border border-[#2B3139] px-3 py-1 rounded-full ml-2">LIVE PROP OS v1</span></div>
+<div class="flex gap-2"><button onclick="showView('trader')" class="border border-[#2B3139] px-4 py-2 rounded-xl text-sm hover:bg-[#1E2329]">Trader Login</button><button onclick="showView('admin')" class="bg-[#F3BA2F] text-black px-5 py-2 rounded-xl font-black text-sm">Super Admin CRM</button></div>
+</nav>
+
+<div id="landing">
+<div class="text-center py-12 md:py-20 px-6 max-w-5xl mx-auto">
+<div class="inline-flex gap-2 bg-[#1E2329] border border-[#2B3139] px-4 py-2 rounded-full text-xs mb-6">● LIVE 1,247 Traders Funded • ₦192M Paid • support@fundednaija.com</div>
+<h1 class="text-4xl md:text-6xl font-black leading-[0.95] tracking-tight">GET FUNDED UP TO<br><span class="text-[#F3BA2F]">₦320,000,000</span><br>IN 7 DAYS</h1>
+<p class="text-[#848E9C] mt-6 max-w-2xl mx-auto text-[15px]">Nigeria's first Naira prop firm. Pay with Bank Transfer, Opay, PalmPay, USDT. Instant MT5 FN-xxxx login. 80% split. No VPN needed.</p>
+<div class="flex justify-center gap-3 mt-8"><button onclick="document.getElementById('plans').scrollIntoView()" class="bg-[#F3BA2F] text-black px-8 py-3 rounded-xl font-black">BUY CHALLENGE</button><button onclick="showView('trader')" class="border border-[#2B3139] px-8 py-3 rounded-xl font-bold">Check My Account</button></div>
+</div>
+
+<div id="plans" class="grid md:grid-cols-4 gap-4 max-w-6xl mx-auto px-6 pb-12">
+<div class="bg-[#1E2329] border border-[#2B3139] rounded-[20px] p-6"><h3 class="font-bold text-[#848E9C]">$10K STARTER</h3><p class="text-3xl font-black mt-2">₦80,000</p><p class="text-xs text-[#848E9C] mt-1">One-time • No monthly</p><ul class="text-sm text-[#B7BDC6] mt-5 space-y-2"><li>✓ Profit Target 8%</li><li>✓ Daily Drawdown 5%</li><li>✓ Max Drawdown 10%</li><li>✓ 80% Profit Split</li><li>✓ MT5 + TradingView</li></ul><button onclick="buyChallenge(80000,'10K')" class="w-full mt-6 bg-white text-black py-3 rounded-xl font-black">BUY FOR ₦80K</button></div>
+
+<div class="bg-[#1E2329] border-2 border-[#F3BA2F] rounded-[20px] p-6 relative shadow-[0_0_30px_rgba(243,186,47,0.15)]"><span class="absolute -top-3 left-6 bg-[#F3BA2F] text-black text-[10px] px-3 py-1 rounded-full font-black">MOST POPULAR</span><h3 class="font-bold text-[#F3BA2F] mt-3">$25K PRO</h3><p class="text-3xl font-black mt-2">₦192,000</p><p class="text-xs text-[#848E9C] mt-1">Scale to ₦80M</p><ul class="text-sm text-[#B7BDC6] mt-5 space-y-2"><li>✓ Everything in Starter</li><li>✓ Free EA + News Trading</li><li>✓ 7 Days Payout</li><li>✓ Scale Plan Enabled</li></ul><button onclick="buyChallenge(192000,'25K')" class="w-full mt-6 bg-[#F3BA2F] text-black py-3 rounded-xl font-black">BUY FOR ₦192K</button></div>
+
+<div class="bg-[#1E2329] border border-[#2B3139] rounded-[20px] p-6"><h3 class="font-bold text-[#848E9C]">$50K ELITE</h3><p class="text-3xl font-black mt-2">₦400,000</p><p class="text-xs text-[#848E9C] mt-1">Scale to ₦160M</p><ul class="text-sm text-[#B7BDC6] mt-5 space-y-2"><li>✓ Weekend Holding</li><li>✓ Priority Support</li><li>✓ 80% Split</li><li>✓ Personal RM</li></ul><button onclick="buyChallenge(400000,'50K')" class="w-full mt-6 bg-white text-black py-3 rounded-xl font-black">BUY FOR ₦400K</button></div>
+
+<div class="bg-[#1E2329] border border-[#2B3139] rounded-[20px] p-6"><h3 class="font-bold text-[#848E9C]">$100K LEGEND</h3><p class="text-3xl font-black mt-2">₦800,000</p><p class="text-xs text-[#848E9C] mt-1">Scale to ₦320M</p><ul class="text-sm text-[#B7BDC6] mt-5 space-y-2"><li>✓ Scale to ₦320M</li><li>✓ 90% Split on Scale</li><li>✓ Instant Withdraw</li><li>✓ WhatsApp Group</li></ul><button onclick="buyChallenge(800000,'100K')" class="w-full mt-6 bg-white text-black py-3 rounded-xl font-black">BUY FOR ₦800K</button></div>
+</div>
+
+<div class="border-t border-[#2B3139] py-10 text-center text-xs text-[#848E9C] px-6">
+<p>© 2026 FUNDED NAIJA LTD • RC 8923411 • Lagos, Nigeria</p>
+<p class="mt-2">smartmoneysmartlive@gmail.com • 07061785512 • Paystack Secured • MT5 Server: FundedNaija-Live</p>
+</div>
+</div>
+
+<div id="trader" class="hidden max-w-6xl mx-auto p-6">
+<div class="flex justify-between items-center"><h2 class="text-2xl font-black">Trader Dashboard <span id="tEmail" class="text-[#F3BA2F] text-sm ml-2"></span></h2><button onclick="showView('landing')" class="border border-[#2B3139] px-4 py-2 rounded-xl text-sm">← Home</button></div>
+<div class="grid md:grid-cols-3 gap-4 mt-6">
+<div class="bg-[#1E2329] border border-[#2B3139] rounded-2xl p-6"><p class="text-xs text-[#848E9C]">MT5 LOGIN</p><p class="font-black text-2xl mt-2 font-mono" id="mt5Id">FN-000000</p><p class="text-xs mt-3"><span class="bg-green-500/20 text-green-400 px-2 py-1 rounded">● ACTIVE</span> Server: FundedNaija-Live</p><p class="text-[11px] text-[#848E9C] mt-3">Password: Fn + 4 digits sent to email</p></div>
+<div class="bg-[#1E2329] border border-[#2B3139] rounded-2xl p-6"><p class="text-xs text-[#848E9C]">ACCOUNT BALANCE (NGN)</p><p class="font-black text-2xl mt-2" id="balNgn">₦0</p><div class="w-full bg-[#2B3139] h-2 rounded-full mt-4"><div id="prog" class="bg-[#F3BA2F] h-2 rounded-full" style="width:0%"></div></div><p class="text-xs text-[#848E9C] mt-2">Target 8% to pass Phase 1</p></div>
+<div class="bg-[#1E2329] border border-[#2B3139] rounded-2xl p-6"><p class="text-xs text-[#848E9C]">PAYOUT</p><button onclick="alert('Payout request sent! Admin will pay to your bank in 24h')" class="w-full mt-3 bg-[#F3BA2F] text-black py-3 rounded-xl font-bold">Request ₦ Payout</button><p class="text-[11px] text-[#848E9C] mt-2">Min ₦10,000 • Opay, Kuda, USDT</p></div>
+</div>
+<div class="mt-6 bg-[#1E2329] border border-[#2B3139] rounded-2xl p-4"><p class="text-sm font-bold">How to connect MT5:</p><p class="text-xs text-[#848E9C] mt-2">1. Download MT5 • 2. Search broker: FundedNaija • 3. Login with FN-xxxx • 4. Start trading</p></div>
+</div>
+
+<div id="admin" class="hidden max-w-7xl mx-auto p-6">
+<div class="flex justify-between items-center"><h2 class="text-2xl font-black">SUPER ADMIN CRM OS - FUNDED NAIJA</h2><button onclick="showView('landing')" class="border border-[#2B3139] px-4 py-2 rounded-xl text-sm">View Site</button></div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+<div class="bg-[#1E2329] border border-[#2B3139] rounded-2xl p-5"><p class="text-xs text-[#848E9C]">TOTAL TRADERS</p><p class="font-black text-2xl mt-1" id="totalT">0</p></div>
+<div class="bg-[#1E2329] border border-[#2B3139] rounded-2xl p-5"><p class="text-xs text-[#848E9C]">REVENUE ₦</p><p class="font-black text-2xl mt-1 text-[#F3BA2F]" id="revT">₦0</p></div>
+<div class="bg-[#1E2329] border border-[#2B3139] rounded-2xl p-5"><p class="text-xs text-[#848E9C]">KYC PENDING</p><p class="font-black text-2xl mt-1" id="kycT">0</p></div>
+<div class="bg-[#1E2329] border border-[#2B3139] rounded-2xl p-5"><p class="text-xs text-[#848E9C]">ACTIVE MT5</p><p class="font-black text-2xl mt-1" id="actT">0</p></div>
+</div>
+<div class="mt-6 bg-[#1E2329] border border-[#2B3139] rounded-2xl overflow-hidden">
+<div class="p-4 border-b border-[#2B3139] flex justify-between"><p class="font-bold">Recent Sales</p><button onclick="clearAll()" class="text-xs text-red-400 border border-red-400/30 px-3 py-1 rounded">Clear Demo</button></div>
+<div class="overflow-auto"><table class="w-full text-sm"><thead class="text-[#848E9C] text-xs border-b border-[#2B3139]"><tr><th class="text-left p-3">TRADER / EMAIL</th><th class="text-left p-3">MT5 LOGIN</th><th class="text-left p-3">CHALLENGE</th><th class="text-left p-3">PAID ₦</th><th class="text-left p-3">STATUS</th><th class="text-left p-3">DATE</th></tr></thead><tbody id="tTable"></tbody></table></div>
+</div>
+<div class="mt-4 text-[11px] text-[#848E9C]">Data saved in browser localStorage. For production, connect to Supabase/Paystack webhook. Contact: smartmoneysmartlive@gmail.com</div>
+</div>
+
+<script src="https://js.paystack.co/v1/inline.js"></script>
+<script>
+let traders=JSON.parse(localStorage.getItem('fn_traders')||'[]');
+function showView(id){['landing','trader','admin'].forEach(x=>document.getElementById(x).classList.add('hidden'));document.getElementById(id).classList.remove('hidden');if(id==='admin')render();window.scrollTo(0,0)}
+function genFN(){return 'FN-'+Math.floor(100000+Math.random()*900000)}
+function buyChallenge(amt,size){
+const email=prompt('Enter your email for MT5 login (FN-xxxx will be sent):');
+if(!email||!email.includes('@'))return alert('Valid email needed');
+let handler=PaystackPop.setup({
+key:'pk_test_7f0cc82d3c0d7e5f1c2a3b4d5e6f7g8h9i0j1',
+email:email,
+amount:amt*100,
+currency:'NGN',
+ref:''+Math.floor(Math.random()*1000000000+1),
+callback:function(res){createTrader(email,size,amt,res.reference)},
+onClose:function(){alert('Payment closed. You can retry.')}
+});
+handler.openIframe();
+}
+function createTrader(email,size,amt,ref){
+const fn=genFN();
+const trader={id:Date.now(),name:email.split('@')[0],email:email,fn:fn,size:size,amount:amt,ref:ref,balance:amt*20,status:'ACTIVE',date:new Date().toLocaleString()};
+traders.push(trader);localStorage.setItem('fn_traders',JSON.stringify(traders));
+document.getElementById('mt5Id').innerText=fn;document.getElementById('balNgn').innerText='₦'+(amt*20).toLocaleString();document.getElementById('tEmail').innerText=email;document.getElementById('prog').style.width='12%';
+showView('trader');
+alert('SUCCESS! MT5 Login: '+fn+'\nServer: FundedNaija-Live\nPassword: Fn'+Math.floor(1000+Math.random()*9000)+'!\n\nCheck your email. Start trading now!');
+}
+function render(){
+document.getElementById('totalT').innerText=traders.length;
+document.getElementById('revT').innerText='₦'+traders.reduce((a,b)=>a+b.amount,0).toLocaleString();
+document.getElementById('kycT').innerText=traders.length;
+document.getElementById('actT').innerText=traders.length;
+let html='';traders.slice().reverse().forEach(t=>{
+html+=`<tr class="border-b border-[#2B3139]/50"><td class="p-3"><div class="font-bold">${t.name}</div><div class="text-xs text-[#848E9C]">${t.email}</div></td><td class="p-3 font-mono font-bold">${t.fn}</td><td class="p-3">$${t.size}</td><td class="p-3 font-bold">₦${t.amount.toLocaleString()}</td><td class="p-3"><span class="bg-green-500/20 text-green-400 px-2 py-1 rounded-full text-xs">${t.status}</span></td><td class="p-3 text-xs text-[#848E9C]">${t.date}</td></tr>`
+});
+document.getElementById('tTable').innerHTML=html||'<tr><td colspan=6 class="p-8 text-center text-[#848E9C]">No sales yet. When someone pays ₦80K-₦800K via Paystack, they appear here automatically.</td></tr>';
+}
+function clearAll(){if(confirm('Clear all demo traders?')){traders=[];localStorage.removeItem('fn_traders');render()}}
+render();
+</script>
+</body>
+</html>
